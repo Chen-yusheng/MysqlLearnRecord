@@ -7,3 +7,4 @@
 |[数据库表设计和范式](https://github.com/Chen-yusheng/MysqlLearnRecord/blob/main/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%AE%BE%E8%AE%A1%E5%92%8C%E8%8C%83%E5%BC%8F.md)| |23/6/10|
 |[MySQL核心基础](https://github.com/Chen-yusheng/MysqlLearnRecord/blob/main/Mysql%E6%A0%B8%E5%BF%83%E5%9F%BA%E7%A1%80.md)| |23/6/10|
 |[连接查询](https://github.com/Chen-yusheng/MysqlLearnRecord/blob/main/%E8%BF%9E%E6%8E%A5%E6%9F%A5%E8%AF%A2.md) | | 23/6/11|
+|[存储引擎和索引](https://github.com/Chen-yusheng/MysqlLearnRecord/blob/main/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E%E5%92%8C%E7%B4%A2%E5%BC%95.md) | | 23/6/26|
