@@ -208,7 +208,8 @@ select age,count(age) as num from user where age > 16 group by age desc;
 降序需要用到关键字desc ,desc直接作用于它前面的过滤条件(age)，对于没有显式desc的过滤条件(name)，仍按默认升序排序  
 如果想在多个列上降序，则要每个列都指定desc关键字  
 
-应保证order by在from之后，limit在order by之后。使用子句的次序不对将会产生错误消息。 
+应保证where在from之后，order by在where之后，limit在order by之后。使用子句的次序不对将会产生错误消息。
+select ... from ... where ... order by ... limit;
 
 #### 生成大量测试数据
 > delimiter $  
