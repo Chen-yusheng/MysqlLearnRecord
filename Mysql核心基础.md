@@ -216,7 +216,9 @@ select age,count(age) as num from user where age > 16 group by age desc;
 应保证where在from之后，order by在where之后，limit在order by之后。使用子句的次序不对将会产生错误消息。
 select ... from ... where ... order by ... limit;
 
-MySQL在匹配是默认不区分大小写，所以fuses和Fuses匹配。
+MySQL的匹配是默认不区分大小写，所以where name = 'fuses';是可以匹配到Fuses。但使用通配符或搜索，则区分大小写，如like 'jet%'就不会匹配到'Jet'
+
+
 #### 生成大量测试数据
 > delimiter $  
 设置以$为结尾符  
