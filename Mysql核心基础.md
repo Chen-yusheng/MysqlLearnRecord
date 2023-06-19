@@ -216,7 +216,27 @@ select age,count(age) as num from user where age > 16 group by age desc;
 应保证where在from之后，order by在where之后，limit在order by之后。使用子句的次序不对将会产生错误消息。
 select ... from ... where ... order by ... limit;
 
+
+#### 通配符
 MySQL的匹配是默认不区分大小写，所以where name = 'fuses';是可以匹配到Fuses。但使用通配符或搜索，则区分大小写，如like 'jet%'就不会匹配到'Jet'
+与%可以匹配任意多个（包括0个）不同，_下划线必须匹配一个，不能多也不能少  
+
+1.不要过度使用通配符，性能开销大  
+2.除非必要，不要把通配符放在搜索模式的开始处，在开始处，搜索起来最慢  
+3.注意需要通配的位置，否则可能返回不易察觉的错误
+
+
+#### 计算字段
+使用concat()拼接字段
+> select concat(name,'-',age) from user;  
+将name和age中间通过‘-’拼接起来
+
+空白去除  
+通过Rtrim()/Ltrim()/trim()去除右/左/两端的空白  
+> select concat(trim(name),'-',age) from user;
+
+使用as名别名
+> select concat(name,'-',age) as '拼接' from user;  
 
 
 #### 生成大量测试数据
