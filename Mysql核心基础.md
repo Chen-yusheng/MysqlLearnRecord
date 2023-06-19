@@ -205,12 +205,14 @@ select age,count(age) as num from user where age > 16 group by age desc;
 排序完全按照代码的顺序排序，age/name...  
 
 > select name from user order by age desc,name;
-降序需要用到关键字desc ,desc直接作用于它前面的过滤条件(age)，对于没有显式desc的过滤条件(name)，仍按默认升序排序  
+降序需要用到关键字desc ,desc直接作用于它前面的过滤条件(age)，对于没有显式desc的过滤条件(name)，仍按默认升序排序
+ 
 如果想在多个列上降序，则要每个列都指定desc关键字  
 
 应保证where在from之后，order by在where之后，limit在order by之后。使用子句的次序不对将会产生错误消息。
 select ... from ... where ... order by ... limit;
 
+MySQL在匹配是默认不区分大小写，所以fuses和Fuses匹配。
 #### 生成大量测试数据
 > delimiter $  
 设置以$为结尾符  
