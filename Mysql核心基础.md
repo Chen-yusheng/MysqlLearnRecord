@@ -203,18 +203,20 @@ select * from user order by name desc;
 having作为判断条件,上下两条语句相同    
 select age,count(age) as num from user where age > 16 group by age desc;
 
+用where过滤行，用having过滤分组，having和where的句法相同，只是关键字的差别。having支持所有where操作符      
+在select中使用表达式，则必须在group by子句中使用相同的表达式。不能使用别名。  
+出聚集计算语句外，select语句中的每一个列都必须在group by子句中给出。  
+
 默认是升序排列
 > select name from user order by age,name;  
 先按照age排序，同age时按照name排序  
 排序完全按照代码的顺序排序，age/name...  
 
 > select name from user order by age desc,name;
-降序需要用到关键字desc ,desc直接作用于它前面的过滤条件(age)，对于没有显式desc的过滤条件(name)，仍按默认升序排序
- 
+降序需要用到关键字desc ,desc直接作用于它前面的过滤条件(age)，对于没有显式desc的过滤条件(name)，仍按默认升序排序  
 如果想在多个列上降序，则要每个列都指定desc关键字  
 
-应保证where在from之后，order by在where之后，limit在order by之后。使用子句的次序不对将会产生错误消息。
-select ... from ... where ... order by ... limit;
+应保证where在from之后，group by在where之后，order by在group by之后，limit在order by之后。使用子句的次序不对将会产生错误消息。 select ... from ... where ... group by ... order by ... limit;
 
 
 #### 通配符
