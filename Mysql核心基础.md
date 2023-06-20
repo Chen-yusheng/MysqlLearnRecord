@@ -220,7 +220,7 @@ select age,count(age) as num from user where age > 16 group by age desc;
 
 
 #### 通配符
-MySQL的匹配是默认不区分大小写，所以where name = 'fuses';是可以匹配到Fuses。但使用通配符或搜索，则区分大小写，如like 'jet%'就不会匹配到'Jet'
+MySQL的匹配是默认不区分大小写，所以where name = 'fuses';是可以匹配到Fuses。但使用通配符或搜索，则区分大小写，如like 'jet%'就不会匹配到'Jet'  
 与%可以匹配任意多个（包括0个）不同，_下划线必须匹配一个，不能多也不能少  
 
 1.不要过度使用通配符，性能开销大  
