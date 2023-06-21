@@ -1,15 +1,17 @@
-¹ØÏµĞÍÊı¾İ¿â(¶şÎ¬±í)£º  
-SQL Server, SQLite, oracle, MySQL, MariaDB, DB2µÈ  
+å…³ç³»å‹æ•°æ®åº“(äºŒç»´è¡¨)ï¼š  
+SQL Server, SQLite, oracle, MySQL, MariaDB, DB2ç­‰  
 
-·Ç¹ØÏµĞÍÊı¾İ¿â(Ó³Éä):
-NoSQL(key-value)£¬redis, Mondb, rockdb, leveldb, ´óÊı¾İ·ÖÎöÁĞÊ½Êı¾İ¿â
+éå…³ç³»å‹æ•°æ®åº“(æ˜ å°„):
+NoSQL(key-value)ï¼Œredis, Mondb, rockdb, leveldb, å¤§æ•°æ®åˆ†æåˆ—å¼æ•°æ®åº“
 
-MySQLdµÄÌØµã£ºÖ§³Ö²å¼şÊ½µÄ´æ´¢ÒıÇæ£¬Ö§³ÖÈçInnoDB,MyISAM,MemoryµÈ
+MySQLdçš„ç‰¹ç‚¹ï¼šæ”¯æŒæ’ä»¶å¼çš„å­˜å‚¨å¼•æ“ï¼Œæ”¯æŒå¦‚InnoDB,MyISAM,Memoryç­‰
 
-MySQLÉè¼Æ³ÉC/SÄ£Ê½(¿Í»§¶Ë-·şÎñÆ÷Ä£Ê½)  
-MySQLµÄ·şÎñÆ÷Ä£ĞÍ²ÉÓÃµÄÊÇI/O¸´ÓÃ+¿ÉÉìËõµÄÏß³Ì³Ø£¬ÊÇÊµÏÖÍøÂç·şÎñÆ÷µÄ¾­µäÄ£ĞÍ
+MySQLè®¾è®¡æˆC/Sæ¨¡å¼(å®¢æˆ·ç«¯-æœåŠ¡å™¨æ¨¡å¼)  
+MySQLçš„æœåŠ¡å™¨æ¨¡å‹é‡‡ç”¨çš„æ˜¯I/Oå¤ç”¨+å¯ä¼¸ç¼©çš„çº¿ç¨‹æ± ï¼Œæ˜¯å®ç°ç½‘ç»œæœåŠ¡å™¨çš„ç»å…¸æ¨¡å‹
 
-°²×°ÅäÖÃºÃMYSQLºóµÇÂ¼·½Ê½£º
+å®‰è£…é…ç½®å¥½MYSQLåç™»å½•æ–¹å¼ï¼š
 >> mysql -u username/root -p  
 >> password
 
+MySQLé…ç½®æ–‡ä»¶:  
+C:\ProgramData\MySQL\MySQL Server 8.0\my.ini
